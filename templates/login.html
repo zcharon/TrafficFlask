@@ -1,0 +1,83 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>基于机器学习车流量自动统计系统</title>
+		<style>
+			a:link,a:visited{
+				text-decoration:none; /*超链接无下划线*/
+			}
+		</style>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="static/login_assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="static/login_assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload">
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Header -->
+					<header id="header">
+						<div class="logo">
+							<span class="icon fa-gem"></span>
+						</div>
+						<div class="content">
+							<div class="inner">
+								<h1>基于机器学习车流量自动统计系统</h1>
+								<p>周**，李**，路**</p>
+							</div>
+						</div>
+						<nav>
+							<ul>
+                                <li><a href="#login">登录</a></li>
+							</ul>
+						</nav>
+					</header>
+
+				<!-- Main -->
+					<div id="main">
+
+						<!-- login -->
+							<article id="login">
+								<h2 class="major">用户登录</h2>
+								<form action="{{url_for('userInfo')}}" method="post" >
+									<div class="fields">
+										<div class="field">
+<!--										<div class="field half">-->
+											<label for="name">账号</label>
+											<input type="text" name="id" id="name" />
+										</div>
+										<div class="field">
+<!--										<div class="field half">-->
+											<label for="email">密码</label>
+											<input type="password" name="email" id="email" />
+										</div>
+
+									</div>
+									<ul class="actions">
+<!--										<li><input type="submit" value="登录" class="primary" /></li>-->
+										<li><input type="submit" value="登录"/></li>
+<!--										<li><input type="reset" value="Reset" /></li>-->
+									</ul>
+								</form>
+								<ul></ul>
+							</article>
+					</div>
+
+				<!-- Footer -->
+					<footer id="footer">
+					</footer>
+			</div>
+
+		<!-- BG -->
+			<div id="bg"><img src="static/bg.jpg" alt="" /></div>
+
+		<!-- Scripts -->
+			<script src="static/login_assets/js/jquery.min.js"></script>
+			<script src="static/login_assets/js/browser.min.js"></script>
+			<script src="static/login_assets/js/breakpoints.min.js"></script>
+			<script src="static/login_assets/js/util.js"></script>
+			<script src="static/login_assets/js/main.js"></script>
+	</body>
+</html>

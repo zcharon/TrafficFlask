@@ -1,3 +1,9 @@
+# YOLO权重文件、训练集文件与程序生成的检测文件
+YOLO/model_data/*h5
+YOLO/out_video/*.*
+YOLO/video/*.*
+YOLO/export_file/*.*
+
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
@@ -126,4 +132,8 @@ venv.bak/
 dmypy.json
 
 # Pyre type checker
+<<<<<<< HEAD
 .pyre/
+=======
+.pyre/
+>>>>>>> e4b01f6 (v1.0)

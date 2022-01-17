@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <h1>Video Streaming Demonstration</h1>
+    <img src="{{ url_for('video_feed', i = index)}}" width="70%" height="70%">
+{#    <input type="button" name="close" value="关闭页面" onclick="window.close();"  />#}
+    <a  href="/video_close">关闭页面</a>
+</body>
+</html>

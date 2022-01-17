@@ -1,0 +1,77 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>地图</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="static/site_assets/css/main.css" />
+ <style>
+
+        .wrap{
+			flex-wrap: wrap;
+            width:100%;
+			height: 100%;
+        }
+        #left{
+            float: left;
+            width: 3%;
+            height: 100%;
+        }
+		#center{
+			float: left;
+            width: 52%;
+            height: 100%;
+		}
+        #right{
+            float: right;
+            width: 35%;
+            height: 100%;
+        }
+		.hide{
+			height: 400px;
+			width: 450px;
+			position: relative;
+            overflow:hidden;
+		}
+		.container {
+            position: absolute;
+ 			left: 0;
+ 			top: 0;
+ 			right: -17px;
+ 			bottom: 0;
+            overflow-y:auto;
+            }
+    </style>
+	</head>
+	<body class="is-preload">
+
+	<div class="wrap">
+		<div id="left"></div>
+		<div id="center">
+			<iframe src="{{url_for('map')}}" width="750px" height="450px" scrolling="no" ></iframe>
+<!--		 Header-->
+			<header id="header">
+				<h1 style="display: inline">  青岛市市北区</h1>
+				<p>点击地图上具体路口或右侧列表项，以查看该路口人车实时流量情况。</p>
+			</header>
+		</div>
+
+		<div id="right">
+
+			<div class="hide">
+				<div class="container">
+					<table>
+				<tr><th><h1 style="display: inline"></h1></th></tr>
+				<tr><th><h2></h2></th></tr>
+				{% for key,value in sites.items() %}
+						<tr><th><a href="{{url_for('video')}}?i={{key}}" target="_blank">{{value}}</a></th></tr>
+				{% endfor %}
+			</table>
+				</div>
+			</div>
+		</div>
+
+	</div>
+			<script src="static/site_assets/js/main.js"></script>
+	</body>
+</html>

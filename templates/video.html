@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>视频</title>
+      <style>
+        .bg{
+            position: fixed;
+            top:0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            min-width: 1000px;
+            z-index: -10;
+            zoom: 1;
+            background-size: cover;
+            -webkit-background-size: cover;
+            -o-background-size: cover;
+            background: #fff url("/static/bg01.jpg") no-repeat center 0;
+        }
+        .cover{
+            position: fixed;
+            top:0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0,0,0,0.4);
+        }
+        h1{
+            color: rgba(255, 255, 255, 0.85);
+        }
+        a{
+          -moz-appearance: none;
+          -webkit-appearance: none;
+          -ms-appearance: none;
+          appearance: none;
+          -moz-transform: scale(1);
+          -webkit-transform: scale(1);
+          -ms-transform: scale(1);
+          transform: scale(1);
+          -moz-transition: border-color 0.2s ease, background-color 0.2s ease;
+          -webkit-transition: border-color 0.2s ease, background-color 0.2s ease;
+          -ms-transition: border-color 0.2s ease, background-color 0.2s ease;
+          transition: border-color 0.2s ease, background-color 0.2s ease;
+          background-color: transparent;
+          border-radius: 4px;
+          border: none;
+          border: solid 2px rgba(255, 255, 255, 0);
+          color: inherit;
+          color: rgba(255, 255, 255, 0.85);
+          font-size: 18px;
+          display: block;
+          outline: 0;
+          padding: 0 1em;
+          text-decoration: none;
+}
+  a:hover {
+    border-bottom-color: transparent;
+    color: #3b7b80 !important;
+    text-decoration: none; }
+
+    </style>
+</head>
+<body>
+<div class="bg">
+    <div class="cover">
+        <div  align="center">
+            <h1>{{loca}}</h1>
+            <img src="{{ url_for('video_feed', i = index)}}" width="70%" height="70%">
+            <a href="{{url_for('information', d_id = index, location = loca)}}">查看监测详情</a>
+        </div>
+    </div>
+
+</div>
+</body>
+</html>

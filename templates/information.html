@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    <title>监测信息</title>
+    <style>
+        .bg{
+            position: fixed;
+            top:0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            min-width: 1000px;
+            z-index: -10;
+            zoom: 1;
+            background-size: cover;
+            -webkit-background-size: cover;
+            -o-background-size: cover;
+            background: #fff url("/static/bg01.jpg") no-repeat center 0;
+        }
+        .cover{
+            position: fixed;
+            top:0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0,0,0,0.4);
+        }
+        .hide{
+            position: relative;
+            overflow:hidden;
+            width: 60%;
+            margin-right: auto;
+            margin-left: auto;
+            height: 100%;
+        }
+        .container {
+            position: absolute;
+ 			left: 0;
+ 			top: 0;
+ 			right: -17px;
+ 			bottom: 0;
+            overflow-y:auto;
+            overflow-y:auto;
+            }
+        h1{
+            color: rgba(255, 255, 255, 0.85);
+        }
+        table {
+             background-color: transparent;
+        }
+            caption {
+              padding-top: 8px;
+              padding-bottom: 8px;
+              color: #777;
+              text-align: left;
+            }
+            th {
+              text-align: left;
+            }
+            .table {
+              width: 100%;
+              max-width: 100%;
+              margin-bottom: 20px;
+            }
+            .table > thead > tr > th,
+            .table > tbody > tr > th,
+            .table > tfoot > tr > th,
+            .table > thead > tr > td,
+            .table > tbody > tr > td,
+            .table > tfoot > tr > td {
+              padding: 8px;
+              line-height: 1.42857143;
+              vertical-align: top;
+              border-top: 1px solid rgba(250, 248, 248, 0.35);
+                color: rgba(238, 238, 238, 0.96);
+            }
+            .table > thead > tr > th {
+              vertical-align: bottom;
+              border-bottom: 1px solid rgba(255, 253, 253, 0.26);
+            }
+            .table > caption + thead > tr:first-child > th,
+            .table > colgroup + thead > tr:first-child > th,
+            .table > thead:first-child > tr:first-child > th,
+            .table > caption + thead > tr:first-child > td,
+            .table > colgroup + thead > tr:first-child > td,
+            .table > thead:first-child > tr:first-child > td {
+              border-top: 0;
+            }
+            .table > tbody + tbody {
+              border-top: 2px solid rgba(224, 210, 210, 0.57);
+            }
+            .table .table {
+              background-color: rgba(241, 235, 235, 0.62);
+            }
+            .table-condensed > thead > tr > th,
+            .table-condensed > tbody > tr > th,
+            .table-condensed > tfoot > tr > th,
+            .table-condensed > thead > tr > td,
+            .table-condensed > tbody > tr > td,
+            .table-condensed > tfoot > tr > td {
+              padding: 5px;
+            }
+            .table-bordered > thead > tr > th,
+            .table-bordered > tbody > tr > th,
+            .table-bordered > tfoot > tr > th,
+            .table-bordered > thead > tr > td,
+            .table-bordered > tbody > tr > td,
+            .table-bordered > tfoot > tr > td {
+              border: 1px solid #084e32;
+            }
+            .table-bordered > thead > tr > th,
+            .table-bordered > thead > tr > td {
+              border-bottom-width: 2px;
+            }
+            .table-striped > thead > tr > th{
+               background-color: rgba(255, 255, 255, 0.21);
+                padding: 14px;
+              line-height: 1.42857143;
+              vertical-align: top;
+
+            }
+            .table-striped > tbody > tr:nth-of-type(odd) {
+              background-color: rgba(250, 248, 248, 0.07);
+            }
+            .table-striped > tbody > tr:nth-of-type(even) {
+              background-color: rgba(255, 255, 255, 0.10);
+            }
+            table col[class*="col-"] {
+              position: static;
+              display: table-column;
+              float: none;
+            }
+            table td[class*="col-"],
+            table th[class*="col-"] {
+              position: static;
+              display: table-cell;
+              float: none;
+            }
+    </style>
+</head>
+<body>
+<div class="bg">
+    <div class="cover">
+        <h1 align="center">{{loca}}监测详情</h1>
+        <div class="hide">
+            <div class ="container">
+            <table class="table table-striped">
+                <thead>
+                <tr>
+                    <th>时间</th>
+                    <th>车流量</th>
+                    <th>人流量</th>
+                </tr>
+                </thead>
+                <tbody>
+                {% for data in datas %}
+                    <tr>
+                        <td>{{data[0]}}</td>
+                        <td>{{data[1]}}</td>
+                        <td>{{data[2]}}</td>
+                    </tr>
+                {% endfor %}
+                </tbody>
+            </table>
+        </div>
+        </div>
+
+
+    </div>
+</div>
+</body>
+</html>
