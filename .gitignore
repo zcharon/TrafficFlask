@@ -1,8 +1,9 @@
 # YOLO权重文件、训练集文件与程序生成的检测文件
-YOLO/model_data/*h5
-YOLO/out_video/*.*
-YOLO/video/*.*
-YOLO/export_file/*.*
+YOLO/model_data/*.h5
+YOLO/out_video/*[avi|mp4]
+YOLO/video/*[avi|mp4]
+YOLO/export_file/
+YOLO/README.md
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
