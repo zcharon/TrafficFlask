@@ -102,7 +102,6 @@ def save_video(path, i):
 
 
 if __name__ == '__main__':
-
     path1 = "video/video1.mp4"
     path2 = "video/video1.mp4"
     thread1 = threading.Thread(target=save_video, args=(path1, 1,))

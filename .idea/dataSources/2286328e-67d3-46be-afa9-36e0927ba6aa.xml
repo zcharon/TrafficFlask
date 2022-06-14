@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <dataSource name="root@localhost">
-  <database-model serializer="dbm" dbms="MYSQL" family-id="MYSQL" format-version="4.32">
+  <database-model serializer="dbm" dbms="MYSQL" family-id="MYSQL" format-version="4.39">
     <root id="1"/>
     <collation id="2" parent="1" name="armscii8_bin">
       <Charset>armscii8</Charset>
@@ -906,10 +906,10 @@
     <table id="289" parent="283" name="manager"/>
     <table id="290" parent="283" name="record"/>
     <column id="291" parent="288" name="d_id">
+      <AutoIncrement>1</AutoIncrement>
       <DataType>int|0s</DataType>
       <NotNull>1</NotNull>
       <Position>1</Position>
-      <SequenceIdentity>null</SequenceIdentity>
     </column>
     <column id="292" parent="288" name="m_id">
       <DataType>int|0s</DataType>
@@ -938,10 +938,10 @@
       <Primary>1</Primary>
     </key>
     <column id="298" parent="289" name="m_id">
+      <AutoIncrement>1</AutoIncrement>
       <DataType>int|0s</DataType>
       <NotNull>1</NotNull>
       <Position>1</Position>
-      <SequenceIdentity>null</SequenceIdentity>
     </column>
     <column id="299" parent="289" name="username">
       <DataType>varchar(10)|0s</DataType>
