@@ -9,7 +9,7 @@
 
 1. 总体设计概念图
 
-   <img src="D:\PycharmProjects_\TrafficFlask\README.assets\overall_design_flow_chart.png" alt="overall_design_flow_chart" style="zoom:80%;" />
+   <img src="https://github.com/ZCharon/TrafficFlask/blob/main/README.assets/overall_design_flow_chart.png" alt="overall_design_flow_chart" style="zoom:80%;" />
 
 2. 实现功能
 
@@ -21,45 +21,45 @@
 
 3. 运行设计：
 
-   <img src="D:\PycharmProjects_\TrafficFlask\README.assets\run_design.png" alt="run_design" style="zoom:80%;" />
+   <img src="https://github.com/ZCharon/TrafficFlask/blob/main/README.assets/run_design.png" alt="run_design" style="zoom:80%;" />
 
 ### 总体设计
 
 1. 介绍页面
 
-   <img src="D:\PycharmProjects_\TrafficFlask\README.assets\pre_page_.png" alt="pre_page_" style="zoom:67%;" />
+   <img src="https://github.com/ZCharon/TrafficFlask/blob/main/README.assets/pre_page_.png" alt="pre_page_" style="zoom:67%;" />
 
    项目说明展示
 
 2. 登录页面
 
-   <img src="D:\PycharmProjects_\TrafficFlask\README.assets\login_page.png" alt="login_page" style="zoom:67%;" />
+   <img src="https://github.com/ZCharon/TrafficFlask/blob/main/README.assets/login_page.png" alt="login_page" style="zoom:67%;" />
 
    web登录验证
 
 3. 摄像头显示页面
 
-   <img src="D:\PycharmProjects_\TrafficFlask\README.assets\main_page.png" alt="main_page" style="zoom:67%;" />
+   <img src="https://github.com/ZCharon/TrafficFlask/blob/main/README.assets/main_page.png" alt="main_page" style="zoom:67%;" />
 
    1. 内嵌百度地图API，配合javasprit可以实现点图点击事件打开摄像头视频；
    2. 右侧按钮点击事件打开摄像头视频。
 
 4. 摄像头视频播放页面
 
-   <img src="D:\PycharmProjects_\TrafficFlask\README.assets\camers_show_page.png" alt="camers_show_page" style="zoom:67%;" />
+   <img src="https://github.com/ZCharon/TrafficFlask/blob/main/README.assets/camers_show_page.png" alt="camers_show_page" style="zoom:67%;" />
 
    1. 播放当前摄像头对应的监控视频；
    2. 点击查看检测详情，调用数据库进行数据显示。
 
 5. 数据显示页面
 
-   <img src="D:\PycharmProjects_\TrafficFlask\README.assets\data_show_page.png" alt="data_show_page" style="zoom:67%;" />
+   <img src="https://github.com/ZCharon/TrafficFlask/blob/main/README.assets/data_show_page.png" alt="data_show_page" style="zoom:67%;" />
 
    展示当前监控路口的车流量情况。
 
 6. 多线程并发多视频检测
 
-   <img src="D:\PycharmProjects_\TrafficFlask\README.assets\test.png" alt="test" style="zoom:67%;" />
+   <img src="https://github.com/ZCharon/TrafficFlask/blob/main/README.assets/test.png" alt="test" style="zoom:67%;" />
 
    在Flask中开启多线程，进行多个视频的同时检测。
 
